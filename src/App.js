@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider } from '@material-ui/core';
+import React from 'react';
+import BodyPoster from './components/BodyPoster';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import About from './components/About';
+import Statistics from './components/Statistics';
+import News from './components/News';
+import References from './components/References';
+import Subscribe from './components/Subscribe';
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <NavBar />
+      <BodyPoster />
+      <About />
+      <Statistics />
+      <News />
+      <References />
+      <Divider style={{ backgroundColor: '#cccccc' }} />
+      <Subscribe />
+      <Footer />
+    </>
+  )
 }
-
-export default App;
