@@ -1,14 +1,7 @@
 import { makeStyles } from "@material-ui/core";
-import BgImageBody from '../../images/Background2.png';
 import styled from 'styled-components';
 
 export const useStyles = makeStyles(theme => ({
-    container: {
-        height: 600,
-        backgroundSize: 'cover',
-        background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(${BgImageBody})`
-    },
-
     infoContainer: {
         position: 'absolute',
         display: 'flex',

@@ -1,4 +1,4 @@
-import { Container, Grid, Link } from '@material-ui/core';
+import { Grid, Link } from '@material-ui/core';
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import { useStyles, Button, Text } from './styles/bodyStyle';
@@ -8,24 +8,6 @@ export default function BodyPoster() {
     const classes = useStyles();
 
     return (
-        // <Grid container item xs={12} className={classes.container} >
-        //     <Grid container justify='center' alignItems='flex-end' item xs={12} className={classes.textContainer}>
-        //         <ThemeProvider theme={theme}>
-        //             <Typography variant='h2' className={classes.title}>
-        //                 Software fueling digital marketing
-        //             </Typography>
-        //         </ThemeProvider>
-        //     </Grid>
-
-        //     <Grid container justify='center' alignItems='flex-start' item xs={12} className={classes.btnContainer}>
-        //         <Link href='https://www.lianatech.com/resources/about-us/facts-and-figures.html#mm-0' target='_blank'>
-        //             <Button size='md' color='primary' className={classes.btn}>
-        //                 Learn more
-        //          </Button>
-        //         </Link>
-        //     </Grid>
-        // </Grid>
-
         <Grid container style={{ position: 'relative' }}>
             <Image src={BgImageBody} fluid style={{ filter: 'brightness(60%)' }} />
 
