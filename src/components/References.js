@@ -20,7 +20,7 @@ export default function References() {
     ];
 
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} justify='center'>
             <Grid container justify='center' item xs={12}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='h3' className={classes.title}>
@@ -29,7 +29,7 @@ export default function References() {
                 </ThemeProvider>
             </Grid>
 
-            <Grid container justify='center' item xs={12} style={{ marginBottom: 100 }}>
+            <Grid container justify='center' item md={9} style={{ marginBottom: 100 }}>
                 {references.map((ref, index) =>
                     <Grid key={index} item md className={classes.refContainer}>
                         <Container className={classes.refBox}>

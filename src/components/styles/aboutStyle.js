@@ -1,22 +1,20 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
-    container: {
-        width: '90%',
-        height: 296,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        '&:hover': {
-            opacity: 0.7,
-        }
+    textContainer: {
+        position: 'absolute', 
+        display: 'flex', 
+        top: 0, 
+        height: '100%', 
+        width: '90%', 
+        justifyContent: 'center', 
+        alignItems: 'center'
     },
 
     title: {
         color: 'white',
         fontFamily: 'Open Sans',
-        padding:  '7rem'
+        textAlign: 'center',
     }
 
 }))

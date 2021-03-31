@@ -4,6 +4,7 @@ import CompanyImage from '../images/company.png';
 import ProductImage from '../images/product.png';
 import ContactImage from '../images/contact.png';
 import useStyles from './styles/aboutStyle';
+import { Image } from 'react-bootstrap';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -17,16 +18,19 @@ export default function About() {
     ]
 
     return (
-        <Grid container justify='center' item xs={12} style={{ marginTop: 80 }}>
+        <Grid container justify='center' item xs={12} style={{ marginTop: 80, marginBottom: 50 }}>
             {items.map((item, index) =>
                 <Grid key={index} item md={3}>
                     <Link style={{ textDecoration: 'none', }} href={item.href} target='_blank'>
-                        <Container style={{ backgroundImage: `url(${item.img})`, }} className={classes.container}>
-                            <ThemeProvider theme={theme}>
-                                <Typography variant='h5' className={classes.title}>
-                                    {item.title}
-                                </Typography>
-                            </ThemeProvider>
+                        <Container style={{ position: 'relative', marginBottom: 30 }}>
+                            <Image src={item.img} fluid />
+                            <Container className={classes.textContainer}>
+                                <ThemeProvider theme={theme}>
+                                    <Typography variant='h5' className={classes.title}>
+                                        {item.title}
+                                    </Typography>
+                                </ThemeProvider>
+                            </Container>
                         </Container>
                     </Link>
                 </Grid>

@@ -1,23 +1,36 @@
 import { makeStyles } from "@material-ui/core";
-import BgImageBody from '../../images/background.jpg';
+import BgImageBody from '../../images/Background2.png';
+import styled from 'styled-components';
 
-const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles(theme => ({
     container: {
-        height: 933,
+        height: 600,
         backgroundSize: 'cover',
         background: `linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(${BgImageBody})`
     },
 
+    infoContainer: {
+        position: 'absolute',
+        display: 'flex',
+        top: 0,
+        height: '100%',
+        width: '90%',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
     title: {
         color: 'white',
-        fontFamily: 'Open Sans'
+        fontFamily: 'Open Sans',
+        fontWeight: '100',
+        textAlign: 'center'
     },
 
     btn: {
         backgroundColor: '#4c8930',
         fontFamily: 'Open Sans',
         padding: 15,
-        borderRadius: 5
+        borderRadius: 5,
     },
 
     textContainer: {
@@ -26,8 +39,46 @@ const useStyles = makeStyles(theme => ({
 
     btnContainer: {
         height: '40%',
-        marginTop: 30
+        marginTop: 10
     },
 }))
 
-export default useStyles;
+export const Button = styled.div`
+color: white;
+font-family: 'Open Sans';
+text-decoration: none;
+
+&:hover {
+  background: #007bff;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    padding: 12px;
+    font-size: 10px
+};
+
+@media (max-width: 700px) {
+    padding: 8px;
+    font-size: 8px
+}
+`;
+
+export const Text = styled.div`
+font-size: 80px;
+@media (max-width: 1300px) {
+    font-size: 60px;
+};
+
+@media (max-width: 1000px) {
+    font-size: 40px
+};
+
+@media (max-width: 700px) {
+    font-size: 30px
+};
+
+@media (max-width: 500px) {
+    font-size: 20px
+};
+`;

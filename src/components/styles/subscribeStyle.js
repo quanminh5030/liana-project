@@ -6,6 +6,7 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'Open Sans',
         marginTop: 80,
         color: 'rgb(55, 58, 60)',
+        textAlign: 'center'
     },
 
     info: {
