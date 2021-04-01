@@ -22,7 +22,7 @@ export default function About() {
             {items.map((item, index) =>
                 <Grid key={index} item md={3}>
                     <Link style={{ textDecoration: 'none', }} href={item.href} target='_blank'>
-                        <Container style={{ position: 'relative', marginBottom: 30 }}>
+                        <Container className={classes.container}>
                             <Image src={item.img} fluid />
                             <Container className={classes.textContainer}>
                                 <ThemeProvider theme={theme}>
