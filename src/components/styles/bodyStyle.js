@@ -39,11 +39,9 @@ export const useStyles = makeStyles(theme => ({
 export const Button = styled.div`
 color: white;
 font-family: 'Open Sans';
-text-decoration: none;
 
 &:hover {
   background: #007bff;
-  text-decoration: none;
 }
 
 @media (max-width: 1000px) {

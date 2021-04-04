@@ -40,7 +40,8 @@ export default function News() {
                                 >
                                     {moment(item.pubDate).format('DD.MM.YYYY')}
                                 </Typography>
-                                <Link href={item.link} color='inherit' target="_blank">
+
+                                <Link href={item.link} color='inherit' target="_blank" >
                                     <Typography variant='body2' className={classes.desc}>{item.description}
                                     </Typography>
                                 </Link>

@@ -19,7 +19,10 @@ export default function BodyPoster() {
                 </Grid>
 
                 <Grid container justify='center' alignItems='flex-start' item xs={12} className={classes.btnContainer}>
-                    <Link href='https://www.lianatech.com/resources/about-us/facts-and-figures.html#mm-0' target='_blank'>
+                    <Link
+                        href='https://www.lianatech.com/resources/about-us/facts-and-figures.html#mm-0' target='_blank'
+                        style={{ textDecoration: 'none' }}
+                    >
                         <Button className={classes.btn}>
                             Learn more
                         </Button>

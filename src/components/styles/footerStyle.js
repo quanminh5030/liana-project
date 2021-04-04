@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
     link: {
         margin: 10,
         color: 'white',
+        '&:hover': {
+            textDecoration: 'none'
+        }
     },
 
     root: {

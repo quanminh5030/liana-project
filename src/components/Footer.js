@@ -6,11 +6,11 @@ import useStyles from './styles/footerStyle';
 export default function Footer() {
     const classes = useStyles();
     const menus = [
-        { id: 1, name: 'Company' },
-        { id: 2, name: 'Products' },
-        { id: 3, name: 'Contact us' },
-        { id: 4, name: 'News' },
-        { id: 5, name: 'Intranet' },
+        { id: 1, name: 'Company', href: 'https://www.lianatech.com/resources/about-us/why-liana.html' },
+        { id: 2, name: 'Products', href: 'https://www.lianatech.com/services.html' },
+        { id: 3, name: 'Contact us', href: 'https://www.lianatech.com/contact-us/contact.html' },
+        { id: 4, name: 'News', href: 'https://www.lianatech.com/media' },
+        { id: 5, name: 'Intranet', href: 'https://www.lianatech.fi/ratkaisut/verkkosivut/hinnoittelu/intranet-ja-extranet.html' },
     ];
     const icons = [
         { logo: FaFacebookF, href: 'https://www.facebook.com/lianatech/' },
@@ -37,7 +37,12 @@ export default function Footer() {
                 <Grid item md={4} style={{ textAlign: 'right' }}>
                     <Container style={{ marginBottom: '3rem' }}>
                         {menus.map(menu =>
-                            <Link className={classes.link} href='#' key={menu.id}>
+                            <Link
+                                className={classes.link}
+                                href={menu.href}
+                                target='_blank'
+                                key={menu.id}
+                            >
                                 {menu.name}
                             </Link>
                         )}

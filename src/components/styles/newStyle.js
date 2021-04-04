@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
         fontWeight: 'bold',
         color: 'rgb(55, 58, 60)',
         fontFamily: 'Open Sans',
-        marginTop: 30
+        marginTop: 30,
     }
 }))
 
