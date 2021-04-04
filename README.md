@@ -31,3 +31,4 @@ npm start # or yarn start
 * React-boostrap.
 * Moment.
 * React-mailchimp-subscribe.
+* Styled-components. 
